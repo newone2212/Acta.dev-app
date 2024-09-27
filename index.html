@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Management</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Meeting Management</h1>
+    
+    <button id="addMeetingBtn">Add Meeting</button>
+    <button id="joinMeetingBtn">Join Meeting</button>
+    <button id="selectRecordingBtn">Select Recording</button>
+    
+    <div id="recordingsList"></div>
+    
+    <script>
+        $(document).ready(function() {
+            // Handler for "Add Meeting" button
+            $('#addMeetingBtn').click(function() {
+                const name = prompt('Enter meeting name:');
+                const url = prompt('Enter meeting URL:');
+                
+                if (name && url) {
+                    $.ajax({
+                        url: 'http://127.0.0.1:5000/add_meeting',
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ name: name, url: url }),
+                        success: function(response) {
+                            alert(response.message);
+                        },
+                        error: function(xhr) {
+                            alert(xhr.responseJSON.error);
+                        }
+                    });
+                } else {
+                    alert('Name and URL are required');
+                }
+            });
+            
+            // Handler for "Join Meeting" button
+            $('#joinMeetingBtn').click(function() {
+                const name = prompt('Enter meeting name to join:');
+                
+                if (name) {
+                    $.ajax({
+                        url: 'http://127.0.0.1:5000/join_meeting',
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ name: name }),
+                        success: function(response) {
+                            alert(response.message);
+                        },
+                        error: function(xhr) {
+                            alert(xhr.responseJSON.error);
+                        }
+                    });
+                } else {
+                    alert('Name is required');
+                }
+            });
+            
+            // Handler for "Select Recording" button
+            $('#selectRecordingBtn').click(function() {
+                $.ajax({
+                    url: 'http://127.0.0.1:5000/select_recording',
+                    method: 'GET',
+                    success: function(response) {
+                        $('#recordingsList').empty();
+                        response.transcripts.forEach(function(transcript) {
+                            const transcriptDiv = $('<div></div>');
+                            transcriptDiv.append(`<p>${transcript.title}</p>`);
+                            transcriptDiv.append(`<button class="selectBtn" data-id="${transcript.id}">Select</button>`);
+                            $('#recordingsList').append(transcriptDiv);
+                        });
+
+                        // Handler for "Select" buttons
+                        $('.selectBtn').click(function() {
+                            const transcriptId = $(this).data('id');
+                            $.ajax({
+                                url: 'http://127.0.0.1:5000/process_transcript',
+                                method: 'POST',
+                                contentType: 'application/json',
+                                data: JSON.stringify({ transcript_id: transcriptId }),
+                                success: function(response) {
+                                    alert(`Summary: ${response.summary}\nAudio URL: ${response.audio_url}\nDocument Path: ${response.doc_path}`);
+                                },
+                                error: function(xhr) {
+                                    alert(xhr.responseJSON.error);
+                                }
+                            });
+                        });
+                    },
+                    error: function(xhr) {
+                        alert(xhr.responseJSON.error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+Tushar Sharma: Minutes.
+karthik varma: Okay.
+karthik varma: So just want one more doubt.
+karthik varma: Yeah.
+Tushar Sharma: Yes, yes please.
+karthik varma: I mean, just for normal doubt, for example, if I, you know, in from my end, if I share my screen and if I, you know, play some audio which is in English or something, would I, would I get that in a transcript as well?
+karthik varma: Just a smoke or.
+karthik varma: I don't know.
+Tushar Sharma: I don't think so.
+Tushar Sharma: If it's clearly audible then it will be shown in the transcript also because some, there are maybe the audio part is not clearly audible to the bot.
+Tushar Sharma: So the part which is clearly audible to the board, it will be shown and it will be shown as a transcript.
+Tushar Sharma: The part which is not.
+karthik varma: Okay, so guys, one more thing.
+karthik varma: So when are we giving the actual things in live and to give him the credentials to test it, I'll give you the.
+Tushar Sharma: Yes, yes.
+Tushar Sharma: We will make it live and we will provide you the API collection.
+Tushar Sharma: You can test it from the APIs.
+Tushar Sharma: We will provide you a readme file.
+karthik varma: Also and no, not, I'll tell you not the API.
+karthik varma: What I will do is I'm the one who is building the front end for it.
+karthik varma: So what I'll do is I'll sit with Shamasher and I'll just make a sample print and just to test the API.
+karthik varma: So just to test the process how we are representing that in the audio file, how we will give the audio file for download and how we will.
+Tushar Sharma: Do the transcript and then that would.
+Tushar Sharma: That would also work?
+karthik varma: Yeah.
+karthik varma: Then it is fine.
+Tushar Sharma: Okay.
+Tushar Sharma: We are okay with that also.
+Tushar Sharma: So as we.
+Tushar Sharma: Yeah, as we saw that we are getting the transcript from the Microsoft Teams and we will definitely get the transcript for Google mate also and we will definitely get the transcript from zoom also.
+Tushar Sharma: But maybe the previous one is.
+Parth Chaturvedi: I think so here why we didn't watch the previous one.
+Parth Chaturvedi: It's showing that video is too short to process.
+Parth Chaturvedi: That's why maybe chances they didn't.
+Tushar Sharma: Yes.
+Parth Chaturvedi: So we need to seconds.
+Parth Chaturvedi: Sharma sir is not speaking so maybe.
+Tushar Sharma: Sharma sir, you have to speak something.
+Parth Chaturvedi: No, no.
+sarma bkp: Right.
+Parth Chaturvedi: Yes.
+sarma bkp: Okay.
+sarma bkp: Okay.
+sarma bkp: I'm just wondering whether it is a real acta virtual assistant or it's like a Tushar or someone with that name join.
+Tushar Sharma: No, no, no, it's actual.
+Parth Chaturvedi: It's actually a virtual assistant sir.
+sarma bkp: Okay.
+sarma bkp: Okay.
+sarma bkp: Okay.
+sarma bkp: End of the day, what we are doing, we are doing a practice of how we are going to integrate fireflies APIs to any other application.
+sarma bkp: That is the exercise that we are doing which may be reasonable but end of the day I am bit worried about the costing part.
+sarma bkp: Have you guys done any research, say for $29 per month for unlimited?
+Tushar Sharma: Yes, yes.
+Tushar Sharma: Let me share you the pricing part also.
+Tushar Sharma: Just give me a moment please.
+Parth Chaturvedi: Should I share, sir?
+sarma bkp: Yeah, share your screen.
+Tushar Sharma: Yes, you can.
+Tushar Sharma: Yes, yes.
+Tushar Sharma: You have the screen.
+Parth Chaturvedi: Plans.
+Parth Chaturvedi: So this is a plan.
+Parth Chaturvedi: $29 is for monthly and if you go for annually it also reduces to $19.
+sarma bkp: Okay, what is there?
+Parth Chaturvedi: It's unlimited transcription, unlimited AI summaries, unlimited storage, video conferencing, conversational, everything which is.
+Tushar Sharma: Included in the pro plus with the, with the pro plan is also there.
+Tushar Sharma: With the free plan is also there.
+Tushar Sharma: Plus these things which are listed over there in the business section.
+Parth Chaturvedi: Like currently we have 8000 minutes storage.
+Parth Chaturvedi: Then we will have unlimited storage in at $19.
+Tushar Sharma: Now we are using the testing purpose, that's why we purchased it for a pro plan.
+Tushar Sharma: And whenever our testing is successful, we will go with the business plan also.
+sarma bkp: So that API I can register and I can give it to you.
+Tushar Sharma: Yes, you have to just enter the API key and we have to make some integrations in the Fireflies AI.
+Tushar Sharma: So you have to provide us the Fireflies credentials and after that we will make some, some modifications and some integrations in that console only.
+Tushar Sharma: And after that we will use.
+karthik varma: Yeah.
+karthik varma: Also one more thing.
+karthik varma: So when we do this, you don't need to go to the fireplace.
+karthik varma: It is a one time thing.
+karthik varma: If you just leave the fireface like that handled in the actor AI portal itself, we don't need to go to.
+Tushar Sharma: That'S a kind of a backup portal.
+Tushar Sharma: We can say that if anything lost or anything need to be recovered, we can recover it from the Fireflies dot.
+Tushar Sharma: So in just like in Microsoft Teams we have a sharepoint for the backup purpose.
+Tushar Sharma: In Google Meets we have the Google Docs.com for the backup purpose.
+Tushar Sharma: And in zoom meets we have the zoom developer account for the backup purpose.
+Tushar Sharma: And in our product everything is backed up in fireflies production.
+Tushar Sharma: Fireflies console.
+Tushar Sharma: Yeah, I think that's all from our side.
+Tushar Sharma: I think part that time is okay.
+Parth Chaturvedi: Maybe what this time would be okay, just remove acta.
+Parth Chaturvedi: Let me check the status.
+sarma bkp: Is this fine or again it will say too less to no, no.
+sarma bkp: Shall we?
+Parth Chaturvedi: In the previous the audio was too short for processing.
+Parth Chaturvedi: It showed that audio is too short for processing.
+sarma bkp: Okay, okay.
+sarma bkp: Now almost all five.
+sarma bkp: How many minutes we discussed three or four minutes, right?
+Parth Chaturvedi: Yes, yes.
+Tushar Sharma: For sure, for sure.
+sarma bkp: Yeah.
+Tushar Sharma: So I think can you please remove the bot?
+karthik varma: Yeah.
+Tushar Sharma: Hello.
+sarma bkp: Yeah, anybody can remove, right?
+sarma bkp: I can also remove.
+sarma bkp: No, I cannot remove.
+Tushar Sharma: Yes, only the admin of the meat can remove it.
+sarma bkp: Okay.
+sarma bkp: Karthik is admin, right?
+sarma bkp: Karthik, can you remove?
+sarma bkp: But.
+karthik varma: Yeah.
+karthik varma: Sorry sir.
+karthik varma: Yes, I'll remove right now.
+karthik varma: Yeah.
+Tushar Sharma: Yes please.
